@@ -1,0 +1,12 @@
+{% from "_formhelpers.html" import render_field %}
+{% extends "layout.html" %}
+{% block body %}
+🌿
+<form action="" method="post" name="add_resource">
+    {{ form.hidden_tag() }}
+    {{ render_field(form.name) }}
+    {{ render_field(form.type) }}
+    {{ render_field(form.status) }}
+    <input type="submit" value="Add resource">
+</form>
+{% endblock %}
